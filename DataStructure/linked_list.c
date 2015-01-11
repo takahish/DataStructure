@@ -8,19 +8,19 @@
 
 #include "linked_list.h"
 
-/* cealloc: make a cell */
-struct cell *cealloc(void)
+/* cealloc: make a nlist */
+struct nlist *cealloc(void)
 {
-    return (struct cell *) malloc(sizeof(struct cell));
+    return (struct nlist *) malloc(sizeof(struct nlist));
 }
 
-/* add_list: add a cell with w, at or below p */
-struct cell *add_list(struct cell *p, char *w)
+/* add_list: add a nlist with w, at or below p */
+struct nlist *add_list(struct nlist *p, char *w)
 {
     int cond;
 
     if (p == NULL) {    /* a new word has arrived */
-        p = cealloc();  /* make a new cell */
+        p = cealloc();  /* make a new nlist */
         p->word = strdup(w);
         p->count = 1;
         p->next = NULL;
@@ -32,7 +32,7 @@ struct cell *add_list(struct cell *p, char *w)
 }
 
 /* list_print: in-order print of list p */
-void list_print(struct cell *p)
+void list_print(struct nlist *p)
 {
     if (p != NULL) {
         printf("%4d %s\n", p->count, p->word);

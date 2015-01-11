@@ -13,14 +13,14 @@
 #include <stdlib.h>
 #include <string.h>
 
-struct cell {
+struct nlist {
     char *word;
     int count;
-    struct cell *next;
+    struct nlist *next;
 };
 
-struct cell *cealloc(void);
-struct cell *add_list(struct cell *, char *);
-void list_print(struct cell *);
+struct nlist *cealloc(void);
+struct nlist *add_list(struct nlist *, char *);
+void list_print(struct nlist *);
 
 #endif /* defined(__DataStructure__linked_list__) */

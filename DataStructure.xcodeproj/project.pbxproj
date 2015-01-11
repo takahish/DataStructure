@@ -10,6 +10,7 @@
 		6F71FE1B1A60DF5D0005A206 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 6F71FE1A1A60DF5D0005A206 /* main.c */; };
 		6F71FE231A60DFD60005A206 /* binary_tree.c in Sources */ = {isa = PBXBuildFile; fileRef = 6F71FE211A60DFD60005A206 /* binary_tree.c */; };
 		6F71FE2D1A60EF3D0005A206 /* linked_list.c in Sources */ = {isa = PBXBuildFile; fileRef = 6F71FE2B1A60EF3D0005A206 /* linked_list.c */; };
+		6F71FE301A6206440005A206 /* hash_table.c in Sources */ = {isa = PBXBuildFile; fileRef = 6F71FE2E1A6206440005A206 /* hash_table.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		6F71FE221A60DFD60005A206 /* binary_tree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = binary_tree.h; sourceTree = "<group>"; };
 		6F71FE2B1A60EF3D0005A206 /* linked_list.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = linked_list.c; sourceTree = "<group>"; };
 		6F71FE2C1A60EF3D0005A206 /* linked_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = linked_list.h; sourceTree = "<group>"; };
+		6F71FE2E1A6206440005A206 /* hash_table.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hash_table.c; sourceTree = "<group>"; };
+		6F71FE2F1A6206440005A206 /* hash_table.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hash_table.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,8 @@
 				6F71FE221A60DFD60005A206 /* binary_tree.h */,
 				6F71FE2B1A60EF3D0005A206 /* linked_list.c */,
 				6F71FE2C1A60EF3D0005A206 /* linked_list.h */,
+				6F71FE2E1A6206440005A206 /* hash_table.c */,
+				6F71FE2F1A6206440005A206 /* hash_table.h */,
 			);
 			path = DataStructure;
 			sourceTree = "<group>";
@@ -128,6 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F71FE301A6206440005A206 /* hash_table.c in Sources */,
 				6F71FE2D1A60EF3D0005A206 /* linked_list.c in Sources */,
 				6F71FE231A60DFD60005A206 /* binary_tree.c in Sources */,
 				6F71FE1B1A60DF5D0005A206 /* main.c in Sources */,
@@ -244,6 +250,7 @@
 				6F71FE201A60DF5D0005A206 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

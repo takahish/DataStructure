@@ -12,6 +12,7 @@
 #include <stdio.h>
 #include "binary_tree.h"
 #include "linked_list.h"
+#include "hash_table.h"
 
 #define MAXWORD 100
 
@@ -19,17 +20,19 @@ int get_word(char *, int);
 
 int main(int argc, const char * argv[]) {
     //struct tnode *root;
-    struct cell *lst;
+    //struct nlist *list;
     char word[MAXWORD];
 
     //root = NULL;
-    lst = NULL;
+    //list = NULL;
     while (get_word(word, MAXWORD) != EOF)
         if (isalpha(word[0]))
             //root = add_tree(root, word);
-            lst = add_list(lst, word);
+            //list = add_list(list, word);
+            add_hash(word);
     //tree_print(root);
-    list_print(lst);
+    //list_print(list);
+    hash_print();
     return 0;
 }
 
